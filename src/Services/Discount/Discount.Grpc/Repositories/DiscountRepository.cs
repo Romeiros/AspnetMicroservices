@@ -28,7 +28,7 @@ namespace Discount.Grpc.Repositories
 
             if (coupon == null)
                 return new Coupon
-                { ProductName = "No Discount", Amount = 0, Description = "No Discount Desc" };
+                { ProductName = productName, Amount = 0, Description = "No Discount Desc" };
 
             return coupon;
         }
